@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 
 const GenerateBtn = () => {
   const {user,setShowLogin}=useContext(AppContext)
-  const navigate=useNavigate
+  const navigate=useNavigate()
   const onClickHandler = () => {
     if(user){
       navigate('/result')
